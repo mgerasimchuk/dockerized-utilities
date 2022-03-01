@@ -2,13 +2,13 @@
 
 ## alpine3.15-golang-1.17.3
 
-utils with link
-
+utils in image:
 - go
 - buf
 - curl
 - [mockgen v1.6.0](https://github.com/golang/mock)
 - [gotests v1.6.0](https://github.com/cweill/gotests)
+- [arch-go v0.8.3](https://github.com/fdaines/arch-go)
 - generate-jwt-token.sh
 
 ### Build and push (should be automated in ci)
@@ -19,6 +19,11 @@ docker push mgerasimchuk/dockerized-utilities:alpine3.15-golang-1.17.3
 ```
 
 ### Usage
+
+Running bash:
+```
+docker run --rm -it mgerasimchuk/dockerized-utilities:alpine3.15-golang-1.17.3
+```
 
 Running specify tool
 ```

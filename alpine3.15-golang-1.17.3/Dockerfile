@@ -22,7 +22,8 @@ RUN cd /go/src/ &&\
     go get google.golang.org/protobuf/cmd/protoc-gen-go &&\
     go get google.golang.org/grpc/cmd/protoc-gen-go-grpc &&\
     go get github.com/golang/mock/mockgen@v1.6.0 &&\
-    go install github.com/cweill/gotests/...@v1.6.0
+    go install github.com/cweill/gotests/...@v1.6.0 &&\
+    go install github.com/fdaines/arch-go@v0.8.3
 
 # "install" generate-jwt-token.sh
 COPY files /
